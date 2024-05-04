@@ -23,8 +23,6 @@ INSERT INTO `uzivatele` (`id`, `jmeno`, `heslo`) VALUES
 DROP TABLE IF EXISTS `filmy`;
 CREATE TABLE `filmy` (
   `nazev` varchar(255) NOT NULL,
-  `reziser` varchar(100) NOT NULL,
-  `rok_vydani` int NOT NULL,
   `zobrazeno` int unsigned NOT NULL DEFAULT 0,
   `zanr` varchar(255) NOT NULL, 
   `subzanr`varchar(255)
@@ -32,6 +30,6 @@ CREATE TABLE `filmy` (
 );
 
 -- Příklad vložení dat do tabulky filmů
-INSERT INTO `filmy` (`nazev`, `reziser`, `rok_vydani`, `zobrazeno`, `zanr`, `subzanr`) VALUES
-('Pulp Fiction', 'Quentin Tarantino', 1994, 0, 'Akční', 'Drama'),
-('Forrest Gump', 'Robert Zemeckis', 1994, 0, 'Komedie', 'Romantika');
+INSERT INTO `filmy` (`nazev`, `reziser`, `zanr`, `subzanr`) VALUES
+('Pulp Fiction', 'Quentin Tarantino', 'Akční', 'Drama'),
+('Forrest Gump', 'Robert Zemeckis', 'Komedie', 'Romantika');

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definice elementu Film -->
+    <xs:element name="film">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- Element pro název filmu -->
+                <xs:element name="title" type="xs:string"/>
+
+                <!-- Element pro režiséra -->
+                <xs:element name="director">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <!-- Jméno režiséra -->
+                            <xs:element name="name" type="xs:string"/>
+                            <!-- Datum narození režiséra ve formátu DD-MM-YYYY -->
+                            <xs:element name="birth_date">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="\d{2}-\d{2}-\d{4}"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+                <!-- Rok natočení filmu -->
+                <xs:element name="year" type="xs:int"/>
+
+                <!-- Žánr filmu -->
+                <xs:element name="genre" type="xs:string"/>
+
+                <!-- Subžánr filmu -->
+                <xs:element name="subgenre" type="xs:string"/>
+
+                <!-- Krátký popis filmu -->
+                <xs:element name="description" type="xs:string"/>
+
+                <!-- Místo natáčení -->
+                <xs:element name="filming_location" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

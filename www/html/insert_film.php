@@ -4,4 +4,4 @@ require INC . '/base_html.php';
 require INC . '/nav_bar.php';
 ?>
 
-<h1>Home page!</h1>
+<h1>Přidávání filmů</h1>

@@ -1,0 +1,12 @@
+<film>
+    <title>Inception</title>
+    <director>
+        <name>Christopher Nolan</name>
+        <birth_date>30-07-1970</birth_date>
+    </director>
+    <year>2010</year>
+    <genre>Action</genre>
+    <subgenre>Science Fiction</subgenre>
+    <description>A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.</description>
+    <filming_location>Various locations including the United Kingdom, Morocco, France, Japan, and Canada</filming_location>
+</film>

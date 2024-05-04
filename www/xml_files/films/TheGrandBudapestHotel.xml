@@ -1,0 +1,12 @@
+<film>
+    <title>The Grand Budapest Hotel</title>
+    <director>
+        <name>Wes Anderson</name>
+        <birth_date>01-05-1969</birth_date>
+    </director>
+    <year>2014</year>
+    <genre>Comedy</genre>
+    <subgenre>Drama</subgenre>
+    <description>The adventures of Gustave H, a legendary concierge at a famous European hotel between the wars, and Zero Moustafa, the lobby boy who becomes his most trusted friend.</description>
+    <filming_location>Germany</filming_location>
+</film>

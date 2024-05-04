@@ -1,0 +1,12 @@
+<film>
+    <title>The Lord of the Rings: The Fellowship of the Ring</title>
+    <director>
+        <name>Peter Jackson</name>
+        <birth_date>31-10-1961</birth_date>
+    </director>
+    <year>2001</year>
+    <genre>Fantasy</genre>
+    <subgenre>Adventure</subgenre>
+    <description>A meek Hobbit and eight companions set out on a journey to destroy the powerful One Ring and save Middle Earth from the Dark Lord Sauron.</description>
+    <filming_location>New Zealand</filming_location>
+</film>
