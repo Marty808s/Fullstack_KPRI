@@ -20,16 +20,15 @@ INSERT INTO `uzivatele` (`id`, `jmeno`, `heslo`) VALUES
 (3, 'petr', '12345');
 
 -- Tabulka filmů
-DROP TABLE IF EXISTS `filmy`;
 CREATE TABLE `filmy` (
   `nazev` varchar(255) NOT NULL,
   `zobrazeno` int unsigned NOT NULL DEFAULT 0,
-  `zanr` varchar(255) NOT NULL, 
-  `subzanr`varchar(255)
+  `zanr` varchar(255) NOT NULL,
+  `subzanr` varchar(255),
+  `reziser` varchar(255) NOT NULL,
   PRIMARY KEY (`nazev`)
 );
 
--- Příklad vložení dat do tabulky filmů
 INSERT INTO `filmy` (`nazev`, `reziser`, `zanr`, `subzanr`) VALUES
-('Pulp Fiction', 'Quentin Tarantino', 'Akční', 'Drama'),
-('Forrest Gump', 'Robert Zemeckis', 'Komedie', 'Romantika');
+('Interception', 'John Will Clay', 'Akční', 'Drama'),
+('The Grand Budapest Hotel', 'Wes Anderson', 'Komedie', 'Drama');
