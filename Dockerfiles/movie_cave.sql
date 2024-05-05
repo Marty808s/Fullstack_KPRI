@@ -22,10 +22,10 @@ INSERT INTO `uzivatele` (`id`, `jmeno`, `heslo`) VALUES
 -- Tabulka filmů
 CREATE TABLE `filmy` (
   `nazev` varchar(255) NOT NULL,
-  `zobrazeno` int unsigned NOT NULL DEFAULT 0,
-  `zanr` varchar(255) NOT NULL,
-  `subzanr` varchar(255),
   `reziser` varchar(255) NOT NULL,
+    `zanr` varchar(255) NOT NULL,
+  `subzanr` varchar(255),
+  `zobrazeno` int unsigned NOT NULL DEFAULT 0,
   PRIMARY KEY (`nazev`)
 );
 

@@ -1,13 +1,26 @@
 <?php
 require '../prolog.php';
+
+
+// Redirect - pokud ení user přihlášen
+if (!isUser()) {
+    header('Location: /login.php');
+}
+
 require INC . '/base_html.php';
 require INC . '/nav_bar.php';
 require INC . '/boxes.php';
 require INC . '/xmlTools.php';
-?>
-<h1>Přidávání filmů</h1>
 
+?>
+
+<div class= "container mt-5">
+    <div class="col-md-12">
+        <h1>Přidávání filmů</h1>
+    </div>
+</div>
 <div class="d-flex justify-content-center m-3">
+   
     <form class="bg-light border rounded p-3 mb-4" enctype="multipart/form-data" method="POST">
         <div class="mb-5">
             Nahrajte Váš oblíbený film:
